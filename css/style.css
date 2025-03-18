@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* bold */
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* regular */
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.woff2') format('woff2'),
+         url('fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300; /* light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400; /* regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.woff2') format('woff2'),
+         url('fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500; /* medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.woff2') format('woff2'),
+         url('fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* regular */
+}
+
+.light {
+    font-weight: 300; /* light */
+}
+
+.medium {
+    font-weight: 500; /* medium */
+}
+
+.bold {
+    font-weight: 700; /* bold */
+}
+/* Opći stilovi */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Navigacijska traka */
+.navbar {
+    background-color: darkred;
+}
+
+/* Stilovi za linkove u navigacijskoj traci */
+.navbar-nav .nav-link {
+    color: white !important; /* Boja slova */
+    font-family: 'Roboto', sans-serif; /* Font */
+    font-size: 18px; /* Veličina slova */
+    font-weight: 500; /* Debljina slova */
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important; /* Boja slova prilikom hovera */
+}
+
+/* Footer */
+.footer {
+    background-color: darkred;
+    color: white;
+    padding: 10px 0;
+}
+/* Stilovi za navigaciju */
+.navbar {
+    background-color: darkred;
+    padding: 20px 0; /* Povećana visina navigacije */
+    width: 100%; /* Proširivanje na cijelu širinu */
+}
+
+.navbar-nav {
+    justify-content: center; /* Centriranje stavki */
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 180px; /* Razmak između stavki */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Veći font */
+    font-weight: bold; /* Podebljan tekst */
+    padding: 10px 15px; /* Veći unutarnji razmak */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover efekt */
+    border-radius: 5px; /* Zaobljeni kutovi */
+}
+
+
+/* Osnovni stilovi za sticky footer */
+html, body {
+    height: 100%; /* Postavite visinu html i body elementa na 100% */
+    margin: 0; /* Uklonite zadane margine */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Postavite body kao flex container s kolonama */
+}
+
+.container {
+    flex: 1; /* Neka glavni sadržaj zauzme preostali prostor */
+}
+
+.footer {
+    background-color: darkred;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Pomaknite footer na dno */
+}
+/* Stilovi za galeriju */
+.galerija .card {
+    margin-bottom: 20px; /* Razmak između kartica */
+    border: 1px solid #ddd; /* Granica kartice */
+    border-radius: 10px; /* Zaobljeni kutovi */
+    overflow: hidden; /* Spriječava preljev sadržaja */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacija hovera */
+}
+
+.galerija .card:hover {
+    transform: translateY(-5px); /* Pomaknite karticu prema gore prilikom hovera */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodajte sjenu prilikom hovera */
+}
+
+.galerija .card-img-top {
+    width: 100%; /* Slika zauzima cijelu širinu kartice */
+    height: auto; /* Očuvaj omjer slike */
+}
+
+.galerija .card-body {
+    padding: 15px; /* Unutarnji razmak unutar kartice */
+    text-align: center; /* Centriranje teksta */
+}
+
+.galerija .card-text {
+    margin: 0; /* Uklonite zadane margine */
+    font-size: 16px; /* Veličina fonta */
+    color: #333; /* Boja teksta */
+}
